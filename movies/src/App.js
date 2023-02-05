@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Header from './Components/Header/header';
 
 function App() {
   return (
+
     <>
+    
     <BrowserRouter>
+    <Header/>
     <Routes>
       <Route index element={<h1>hello world2</h1>}></Route>
       <Route path='movie/:id' element={<h1>movie details</h1>}></Route>

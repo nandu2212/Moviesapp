@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import './Home.css'
 import { Link } from "react-router-dom";
 import MovieList from "../../Components/Movielist/MovieList";
+import Header from "../../Components/Header/header";
 
 
 const Home =()=>{
@@ -16,6 +17,7 @@ const Home =()=>{
     })
     return (
         <>
+        <Header/>
  <Carousel showThumbs={false} autoPlay={true} transitionTime={10} infiniteLoop={true} showStatus={false}>
     {
         popularMovies.map(movies=>(
